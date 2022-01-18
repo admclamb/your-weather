@@ -5,7 +5,6 @@ import Home from "../home";
 import Daily from "../daily";
 import NotFound from "../notFound";
 const Layout = ({ weather, setLocation, tempConv, news }) => {
-  console.log(weather);
   return (
     <>
       <Header setLocation={setLocation} weather={weather} tempConv={tempConv} />
@@ -21,7 +20,7 @@ const Layout = ({ weather, setLocation, tempConv, news }) => {
           <NotFound />
         </Route>
       </Switch>
-      <Footer />
+      <Footer weather={weather} />
     </>
   );
 };

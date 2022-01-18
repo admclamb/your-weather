@@ -17,7 +17,6 @@ const AirPollution = ({ weather }) => {
       abortController.abort();
     };
   }, [weather]);
-  console.log(airPollution);
   if (isObject(weather) && airPollution.list) {
     const { aqi } = airPollution.list[0].main;
     let quality =

@@ -1,0 +1,7 @@
+.breadcrumb-footer {
+  background-color: rgb(128, 128, 128);
+}
+
+.breadcrumb-footer ol {
+  margin-bottom: 0;
+}

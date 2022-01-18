@@ -1,0 +1,16 @@
+.links-tag {
+  color: red;
+  text-decoration: underline;
+}
+
+.credit {
+  width: 30%;
+}
+
+.footer-main {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(241, 241, 241),
+    rgb(194, 192, 192)
+  );
+}

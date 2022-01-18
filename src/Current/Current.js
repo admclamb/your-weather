@@ -6,7 +6,7 @@ import { isObject } from "../helpers/isObject";
 import Spinner from "../helpers/Spinner";
 
 const Current = ({ weather, tempConv }) => {
-  if (isObject(weather)) {
+  if (isObject(weather.weatherData)) {
     const { humidity, wind_gust, dt, sunrise, sunset } =
       weather.weatherData.current;
     const temp = tempConv(weather.weatherData.current.temp);

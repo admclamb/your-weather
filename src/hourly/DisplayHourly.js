@@ -1,7 +1,6 @@
 import HourlyDisplay from "./HourlyDisplay";
 
 const DisplayHourly = ({ hourly, tempConv, sunrise, sunset }) => {
-  console.log(hourly);
   // making sure to only get the next 5 days
   const hourlyArr = hourly.map((hour, index) => {
     if (index < 6) {
