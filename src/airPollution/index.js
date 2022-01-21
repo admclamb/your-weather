@@ -19,6 +19,7 @@ const AirPollution = ({ weather }) => {
   }, [weather]);
   if (isObject(weather) && airPollution.list) {
     const { aqi } = airPollution.list[0].main;
+    const { co, no2, o3, so2 } = airPollution.list[0].components;
     let quality =
       aqi === 1 ? (
         <p className="text-success display-6">Good</p>
@@ -37,6 +38,24 @@ const AirPollution = ({ weather }) => {
       <div className="p-3 border">
         <h5>Air Quality</h5>
         <div className="p-4 text-center">{quality}</div>
+        <div className="row">
+          <div className="col-6">
+            <div className="d-flex justify-content-between border-bottom pb-2">
+              <h6>co</h6> <p>{co}</p>
+            </div>
+            <div className="d-flex justify-content-between pt-2">
+              <h6>no2</h6> <p>{no2}</p>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="d-flex justify-content-between border-bottom pb-2">
+              <h6>o3</h6> <p>{o3}</p>
+            </div>
+            <div className="d-flex justify-content-between pt-2">
+              <h6>so2</h6> <p>{so2}</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

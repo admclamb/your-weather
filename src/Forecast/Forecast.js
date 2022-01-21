@@ -9,7 +9,7 @@ const Forecast = ({ weather, tempConv }) => {
       );
     });
     return (
-      <div className="border mt-3 p-3">
+      <div className="border p-3">
         <h5 className="mb-3">Daily</h5>
         <div className="d-flex justify-content-between">{weatherPerDay}</div>
       </div>

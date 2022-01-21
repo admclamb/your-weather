@@ -9,7 +9,6 @@ import AirPollution from "../airPollution";
 import NationalNews from "../nationalNews/NationalNews";
 import NationalNewsWidget from "../nationalNews/NationalNewsWidget";
 const Home = ({ weather, tempConv, news }) => {
-  console.log(weather);
   return (
     <main className="container mb-4">
       <div className="row">
@@ -17,15 +16,15 @@ const Home = ({ weather, tempConv, news }) => {
           <NationalNews news={news} />
         </div>
       </div>
-      <div className="row gx-5 home-grid">
+      <div className="row home-grid">
         <section className="col col-12 col-md-8">
           <NationalAlerts />
-          <Current weather={weather} tempConv={tempConv} />
           <Forecast weather={weather} tempConv={tempConv} />
+          <Current weather={weather} tempConv={tempConv} />
 
           <Hourly weather={weather} tempConv={tempConv} />
         </section>
-        <section className="col col-12 col-md-4 p-0">
+        <section className="col col-12 col-md-4">
           <AirPollution weather={weather} />
           <NationalNewsWidget news={news} />
         </section>

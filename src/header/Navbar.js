@@ -49,7 +49,7 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
               onChange={handleChange}
             />
             <Link to="/settings">
-              <i className="fas fa-cog  fa-lg text-light mt-2"></i>
+              <i className="fas fa-sliders-h fa-lg text-light mt-2 pt-1"></i>
             </Link>
           </form>
         </div>

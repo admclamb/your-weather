@@ -2,7 +2,6 @@ import { isObject } from "../helpers/isObject";
 import "./BreadCrumbFooter.css";
 const BreadCrumbFooter = ({ weather }) => {
   if (!isObject(weather)) return null;
-  console.log(weather);
   const { country, state, name } = weather.locationInfo[0];
   return (
     <nav aria-label="breadcrumb" className="breadcrumb-footer p-3">
