@@ -4,7 +4,7 @@ export function getLocation(setLocation) {
       (position) => {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
-        // REverse geocoding
+        //geocoding
         setLocation({ type: "coord", lat, lon });
       },
       () => {

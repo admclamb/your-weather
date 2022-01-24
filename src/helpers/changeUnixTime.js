@@ -17,6 +17,8 @@ export const changeUnixToHH = (unixTime) => {
   let hours = date.getHours();
   if (hours > 12) {
     return hours - 12 + "PM";
+  } else if (hours === 0) {
+    return 12 + "AM";
   } else {
     return hours + "AM";
   }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react/cjs/react.development";
 import { getAirPollution } from "../api/getAirPollution";
 import { isObject } from "../helpers/isObject";
+import { rotate180 } from "../helpers/rotate180";
 import Spinner from "../helpers/Spinner";
 
 const AirPollution = ({ weather }) => {
@@ -53,6 +54,30 @@ const AirPollution = ({ weather }) => {
             </div>
             <div className="d-flex justify-content-between pt-2">
               <h6>so2</h6> <p>{so2}</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="btn-for-dropdown d-flex">
+            <button
+              className="btn d-inline ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseDetails"
+              aria-expanded="false"
+              aria-controls="collapseDetails"
+              onClick={rotate180}
+            >
+              <i class="fas fa-chevron-down rotateOriginal"></i>
+            </button>
+          </div>
+
+          <div className="collapse" id="collapseDetails">
+            <div className="card card-body">
+              Besides basic Air Quality Index, the API returns data about
+              polluting gases, such as Carbon monoxide (CO), Nitrogen monoxide
+              (NO), Nitrogen dioxide (NO2), Ozone (O3), Sulphur dioxide (SO2),
+              Ammonia (NH3), and particulates (PM2.5 and PM10).
             </div>
           </div>
         </div>

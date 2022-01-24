@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react/cjs/react.development";
+import { getdirectGeocoding } from "../api/directGeocoding";
 import { isObject } from "../helpers/isObject";
 import NotFound from "../notFound";
 import "./Navbar.css";
@@ -11,8 +12,9 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    setLocation(city);
+    getdirectGeocoding(setLocation, city);
   };
+
   return (
     <>
       <nav className="navbar navbar-dark bg-dark">
