@@ -42,22 +42,22 @@ const AirPollution = ({ weather }) => {
         <div className="row">
           <div className="col-6">
             <div className="d-flex justify-content-between border-bottom pb-2">
-              <h6>co</h6> <p>{co}</p>
+              <h6>CO</h6> <p>{co}</p>
             </div>
             <div className="d-flex justify-content-between pt-2">
-              <h6>no2</h6> <p>{no2}</p>
+              <h6>NO2</h6> <p>{no2}</p>
             </div>
           </div>
           <div className="col-6">
             <div className="d-flex justify-content-between border-bottom pb-2">
-              <h6>o3</h6> <p>{o3}</p>
+              <h6>O3</h6> <p>{o3}</p>
             </div>
             <div className="d-flex justify-content-between pt-2">
-              <h6>so2</h6> <p>{so2}</p>
+              <h6>SO2</h6> <p>{so2}</p>
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-2">
           <div className="btn-for-dropdown d-flex">
             <button
               className="btn d-inline ms-auto"
@@ -73,7 +73,7 @@ const AirPollution = ({ weather }) => {
           </div>
 
           <div className="collapse" id="collapseDetails">
-            <div className="card card-body">
+            <div className="">
               Besides basic Air Quality Index, the API returns data about
               polluting gases, such as Carbon monoxide (CO), Nitrogen monoxide
               (NO), Nitrogen dioxide (NO2), Ozone (O3), Sulphur dioxide (SO2),
