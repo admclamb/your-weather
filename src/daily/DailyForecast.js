@@ -6,7 +6,7 @@ const DailyForecast = ({ weather, tempConv }) => {
   console.log(daily);
   const dailyWeatherArr = daily.map((day, index) => {
     return (
-      <div key={index} className="border p-3">
+      <div key={index} className="border p-3 mt-3">
         <DayCard dayWeather={day} tempConv={tempConv} index={index} />
       </div>
     );
