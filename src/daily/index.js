@@ -1,4 +1,3 @@
-import { Switch, Route } from "react-router-dom";
 import Forecast from "../Forecast/Forecast";
 import DisplayDay from "./DisplayDay";
 import Current from "../Current/Current";
@@ -11,14 +10,7 @@ const Daily = ({ weather, tempConv }) => {
       <Current weather={weather} tempConv={tempConv} />
       <div className="row mb-3">
         <div className="col col-12 col-md-8">
-          <Switch>
-            <Route path={"/daily/:dailyId"}>
-              <DisplayDay weather={weather} tempConv={tempConv} />
-            </Route>
-            <Route>
-              <DailyForecast weather={weather} tempConv={tempConv} />
-            </Route>
-          </Switch>
+          <DailyForecast weather={weather} tempConv={tempConv} />
         </div>
         <div className="col col-12 col-md-4"></div>
       </div>

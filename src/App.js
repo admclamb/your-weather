@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { getWeatherData } from "./api/getWeatherData";
 import { getWeatherNews } from "./api/getWeatherNews";
 import { getLocation } from "./api/getLocation";
@@ -36,14 +35,12 @@ function App() {
   };
   return (
     <div className="App">
-      <Router>
-        <Layout
-          weather={weather}
-          setLocation={setLocation}
-          tempConv={tempConv}
-          news={news}
-        />
-      </Router>
+      <Layout
+        weather={weather}
+        setLocation={setLocation}
+        tempConv={tempConv}
+        news={news}
+      />
     </div>
   );
 }
