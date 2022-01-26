@@ -8,7 +8,6 @@ const TodayCard = ({ weatherOfDay, tempConv }) => {
     weather,
   } = weatherOfDay;
   const { description } = weather[0];
-  console.log(weatherOfDay);
   return (
     <div className="d-flex align-items-center">
       <i className={GetIcon(id, "med", true) + " " + "me-4 ms-5"}></i>

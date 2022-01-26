@@ -3,7 +3,6 @@ import { rotate180 } from "../helpers/rotate180";
 import { GetIcon } from "../helpers/GetIcon";
 const DayCard = ({ dayWeather, tempConv, index }) => {
   if (!dayWeather) return null;
-  console.log(dayWeather);
   let {
     dt,
     temp: { min, max, night },

@@ -3,7 +3,6 @@ import { isObject } from "../helpers/isObject";
 import TodayCard from "./TodayCard";
 
 const TodayForecast = ({ weather, tempConv }) => {
-  console.log(weather);
   if (isObject(weather)) {
     return (
       <div className="border p-4 mt-3">
