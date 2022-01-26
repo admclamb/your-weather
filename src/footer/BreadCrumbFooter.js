@@ -6,12 +6,12 @@ const BreadCrumbFooter = ({ weather }) => {
   return (
     <nav aria-label="breadcrumb" className="breadcrumb-footer p-3">
       <div className="container">
-        <ol class="breadcrumb text-light">
-          <li class="breadcrumb-item">{country}</li>
-          <li class="breadcrumb-item" aria-current="page">
+        <ol className="breadcrumb text-light">
+          <li className="breadcrumb-item">{country}</li>
+          <li className="breadcrumb-item" aria-current="page">
             {state}
           </li>
-          <li class="breadcrumb-item" aria-current="page">
+          <li className="breadcrumb-item" aria-current="page">
             {name}
           </li>
         </ol>

@@ -9,7 +9,7 @@ const Daily = ({ weather, tempConv }) => {
   return (
     <div className="container">
       <Current weather={weather} tempConv={tempConv} />
-      <div className="row">
+      <div className="row mb-3">
         <div className="col col-12 col-md-8">
           <Switch>
             <Route path={"/daily/:dailyId"}>

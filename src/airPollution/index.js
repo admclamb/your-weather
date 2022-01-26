@@ -68,7 +68,7 @@ const AirPollution = ({ weather }) => {
               aria-controls="collapseDetails"
               onClick={rotate180}
             >
-              <i class="fas fa-chevron-down rotateOriginal"></i>
+              <i className="fas fa-chevron-down rotateOriginal"></i>
             </button>
           </div>
 

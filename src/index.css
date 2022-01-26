@@ -19,6 +19,10 @@ ul {
   padding-left: 0;
 }
 
+.rotateOriginal {
+  transition: 0.4s;
+}
+
 .rotate180 {
   transition: 0.4s;
   -ms-transform: rotate(180deg); /* IE 9 */

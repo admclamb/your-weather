@@ -5,7 +5,7 @@ export async function getWeatherData(location, setWeatherData, signal) {
     let weatherData = {};
     let locationInfo = {};
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${KEY}`,
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&unites=imperial&appid=${KEY}`,
       { signal }
     );
     weatherData = await response.json();

@@ -1,20 +1,10 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { useState } from "react/cjs/react.development";
-import { getdirectGeocoding } from "../api/directGeocoding";
 import { isObject } from "../helpers/isObject";
 import NotFound from "../notFound";
+import SearchForm from "./SearchForm";
 import "./Navbar.css";
 
 const Navbar = ({ setLocation, weather, tempConv }) => {
-  const [city, setCity] = useState("");
-  const handleChange = ({ target }) => {
-    setCity(target.value);
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    getdirectGeocoding(setLocation, city);
-  };
-
   return (
     <>
       <nav className="navbar navbar-dark bg-dark">
@@ -23,7 +13,11 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
             <a className="navbar-brand">Weatherly</a>
             <div className="text-light d-flex ">
               <p className="me-2">
-                {isObject(weather) ? weather.locationInfo[0].name + "," : ""}
+                {isObject(weather)
+                  ? weather.locationInfo[0].name +
+                    ", " +
+                    weather.locationInfo[0].state
+                  : ""}
               </p>
               <p>
                 {isObject(weather)
@@ -33,27 +27,7 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
             </div>
           </div>
 
-          <form className="d-flex input-group w-auto searchbar">
-            <button
-              className="input-group-text border-0 search-icon"
-              id="search-addon"
-              onClick={handleSubmit}
-            >
-              <i className="fas fa-search"></i>
-            </button>
-            <input
-              type="search"
-              className="form-control searchbar-search me-3 rounded-right"
-              placeholder="Search"
-              aria-label="Search"
-              aria-describedby="search-addon"
-              value={city}
-              onChange={handleChange}
-            />
-            <Link to="/settings">
-              <i className="fas fa-sliders-h fa-lg text-light mt-2 pt-1"></i>
-            </Link>
-          </form>
+          <SearchForm setLocation={setLocation} />
         </div>
       </nav>
       <div className="container">
