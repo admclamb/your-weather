@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 import { changeUnixToHHMM, changeUnixToHH } from "../helpers/changeUnixTime";
 import { GetIcon } from "../helpers/GetIcon";
 import { isDayTime } from "../helpers/isDayTime";

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 import { isObject } from "../helpers/isObject";
 import NotFound from "../notFound";
 import SearchForm from "./SearchForm";
