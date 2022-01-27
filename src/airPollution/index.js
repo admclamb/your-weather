@@ -36,7 +36,7 @@ const AirPollution = ({ weather }) => {
         "Data Unavailable"
       );
     return (
-      <div className="p-3 border">
+      <div className="p-3 border bg-light">
         <h5>Air Quality</h5>
         <div className="p-4 text-center">{quality}</div>
         <div className="row">

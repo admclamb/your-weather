@@ -4,9 +4,9 @@ const BreadCrumbFooter = ({ weather }) => {
   if (!isObject(weather)) return null;
   const { country, state, name } = weather.locationInfo[0];
   return (
-    <nav aria-label="breadcrumb" className="breadcrumb-footer p-3">
+    <nav aria-label="breadcrumb" className="breadcrumb-footer p-3 text-dark">
       <div className="container">
-        <ol className="breadcrumb text-light">
+        <ol className="breadcrumb">
           <li className="breadcrumb-item">{country}</li>
           <li className="breadcrumb-item" aria-current="page">
             {state}

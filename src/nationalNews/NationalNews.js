@@ -1,10 +1,12 @@
+import { useState } from "react/cjs/react.development";
 import { isObject } from "../helpers/isObject";
 
 const NationalNews = ({ news }) => {
   if (!isObject(news) && news.status !== "ok") return null;
-  const { articles } = news;
-  const { author, title, description, source, urlToImage, url } = articles[0];
 
+  const { articles } = news;
+  let currentArticle = articles[0];
+  let { author, title, description, source, urlToImage, url } = currentArticle;
   return (
     <div
       className="jumbotron-fluid d-flex flex-column justify-content-center p-4 mb-4"

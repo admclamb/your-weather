@@ -4,7 +4,7 @@ const DailyForecast = ({ weather, tempConv }) => {
   const { daily } = weather.weatherData;
   const dailyWeatherArr = daily.map((day, index) => {
     return (
-      <div key={index} className="border p-3 mt-3">
+      <div key={index} className="border p-3 mt-3 bg-light">
         <DayCard dayWeather={day} tempConv={tempConv} index={index} />
       </div>
     );

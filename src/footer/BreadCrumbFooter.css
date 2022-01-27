@@ -1,5 +1,6 @@
 .breadcrumb-footer {
-  background-color: rgb(128, 128, 128);
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 }
 
 .breadcrumb-footer ol {

@@ -7,3 +7,13 @@
 .searchbar-search {
   border: none;
 }
+
+.main-nav a:hover {
+  text-decoration: underline #ff4e00;
+  text-underline-offset: 10px;
+}
+
+.main-nav > .active > a {
+  text-decoration: underline #ff4e00;
+  text-underline-offset: 10px;
+}

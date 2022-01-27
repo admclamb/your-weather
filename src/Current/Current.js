@@ -14,7 +14,7 @@ const Current = ({ weather, tempConv }) => {
     const { id, main } = weather.weatherData.current.weather[0];
     const location = weather.locationInfo[0].name;
     return (
-      <div className="border text-dark ps-4 pt-4 pe-4 pb-2 mt-3">
+      <div className="border text-dark ps-4 pt-4 pe-4 pb-2 mt-3 bg-light">
         <div className="d-flex justify-content-between">
           <div style={{ width: "50%" }}>
             <div>

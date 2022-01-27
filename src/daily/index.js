@@ -1,5 +1,3 @@
-import Forecast from "../Forecast/Forecast";
-import DisplayDay from "./DisplayDay";
 import Current from "../Current/Current";
 import DailyForecast from "./DailyForecast";
 import { isObject } from "../helpers/isObject";
@@ -12,7 +10,12 @@ const Daily = ({ weather, tempConv }) => {
         <div className="col col-12 col-md-8">
           <DailyForecast weather={weather} tempConv={tempConv} />
         </div>
-        <div className="col col-12 col-md-4"></div>
+        <div className="col col-12 col-md-4 border mt-3">
+          <script
+            src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js"
+            type="text/javascript"
+          ></script>
+        </div>
       </div>
     </div>
   );

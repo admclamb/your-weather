@@ -19,7 +19,7 @@ const DayCard = ({ dayWeather, tempConv, index }) => {
     moon_phase,
   } = dayWeather;
   const { id, description } = weather[0];
-  const day = changeUnixToDay(16431300000);
+  const day = changeUnixToDay(dt);
   min = tempConv(min);
   max = tempConv(max);
   sunrise = changeUnixToHH(sunrise);

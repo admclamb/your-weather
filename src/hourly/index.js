@@ -6,7 +6,7 @@ const Hourly = ({ weather, tempConv }) => {
     // Get sunrise and sunset to tell if day or night
     const { sunrise, sunset } = weather.weatherData.current;
     return (
-      <div className="border mt-3 p-3">
+      <div className="border mt-3 p-3 bg-light">
         <h5 className="mb-3">Hourly</h5>
         <DisplayHourly
           hourly={weather.weatherData.hourly}

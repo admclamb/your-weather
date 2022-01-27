@@ -31,7 +31,7 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
         </div>
       </nav>
       <div className="container">
-        <nav className="d-flex pt-3 ">
+        <nav className="d-flex pt-3 main-nav">
           <Link to="/" className="me-3 p-1">
             <h5>Home</h5>
           </Link>
@@ -40,9 +40,6 @@ const Navbar = ({ setLocation, weather, tempConv }) => {
           </Link>
           <Link to="/daily" className="me-3 p-1">
             <h5>Daily</h5>
-          </Link>
-          <Link to="/monthly" className="me-3 p-1">
-            <h5>Monthly</h5>
           </Link>
         </nav>
       </div>

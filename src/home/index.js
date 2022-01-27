@@ -8,9 +8,10 @@ import Hourly from "../hourly";
 import AirPollution from "../airPollution";
 import NationalNews from "../nationalNews/NationalNews";
 import NationalNewsWidget from "../nationalNews/NationalNewsWidget";
+import "./Home.css";
 const Home = ({ weather, tempConv, news }) => {
   return (
-    <main className="container mb-4">
+    <main className="container mb-4 home">
       <div className="row">
         <div className="col-12">
           <NationalNews news={news} />
