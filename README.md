@@ -6,6 +6,14 @@
  
  * The Technologies used in the application are BootStrap5, CSS, JavaScript, React, React hooks, React State, and API Calls.
 
+
+## Screenshots
+
+<div align="center">
+ <img src="images/your-weather.png" alt="Your Weathe Screenshot" width="80" height="80">
+
+</div>
+
 ## Getting Started
 
   This application is currently unavailable for installation.
