@@ -6,12 +6,6 @@
  
  * The Technologies used in the application are BootStrap5, CSS, JavaScript, React, React hooks, React State, and API Calls.
 
-
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
 ## Getting Started
 
   This application is currently unavailable for installation.
