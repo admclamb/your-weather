@@ -9,8 +9,6 @@
 ## Getting Started
 
   This application is currently unavailable for installation.
-## Help
-
 
 ## Authors
 
