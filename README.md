@@ -18,7 +18,7 @@ ex. Anthony Mclamb
 
 * 0.2
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
+    * See commit change or commit history
 * 0.1
     * Initial Release
 
