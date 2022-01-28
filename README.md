@@ -10,7 +10,7 @@
 ## Screenshots
 
 <div align="center">
- <img src="images/your-weather.png" alt="Your Weathe Screenshot" width="80" height="80">
+ <img src="images/your-weather.png" alt="Your Weathe Screenshot">
 
 </div>
 
