@@ -21,7 +21,7 @@
 
 ## Authors
 
-ex. Anthony Mclamb
+* Anthony Mclamb
 
 ## Version History
 
