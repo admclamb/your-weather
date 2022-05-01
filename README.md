@@ -1,3 +1,6 @@
+# IMPORTANT
+This is the original release of weatherly. I have pushed the new version your-weather-2. Check it out on my github!
+
 # Your Weather
 
  * An application that uses OpenWeather API, Geolocation API, and News API to get weather, news data for your location and display the information in a professional manner.
